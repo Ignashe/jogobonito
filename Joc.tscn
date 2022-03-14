@@ -1,12 +1,32 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://Godot.gd" type="Script" id=2]
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 15.75, 260 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 69, 60.5 )
+
 [node name="Joc" type="Node2D"]
 
-[node name="Godot" type="Sprite" parent="."]
-position = Vector2( 955, 539 )
+[node name="Area2D" type="Area2D" parent="."]
+gravity_vec = Vector2( 45, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 917, 303 )
+shape = SubResource( 2 )
+
+[node name="Personatge" type="Area2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="Godot" type="Sprite" parent="Personatge"]
 scale = Vector2( 2.15234, 1.88672 )
 texture = ExtResource( 1 )
-script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personatge"]
+position = Vector2( -1, 0.5 )
+shape = SubResource( 1 )
+
+[connection signal="area_entered" from="Personatge" to="Personatge" method="_on_Personatge_area_entered"]
