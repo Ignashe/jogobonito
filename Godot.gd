@@ -1,6 +1,4 @@
 extends Area2D
-
-
 var velocitat : int = 300
 var direccio = Vector2(0,0)
 
@@ -22,18 +20,14 @@ func _process(delta):
 		direccio[1] = 1
 	position += direccio.normalized() * velocitat * delta
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-func _on_Personatge_area_entered(area):
-	modulate = Color(1,0,0)
+func _on_Personatge_area_entered(area :Area2D):
+	print(area.name)
+	if area.is_in_group('Final'):
+		modulate = Color(1,0,0)
+	elif area.is_in_group('Inici'):
+		modulate = Color(0,1,0)
+	$Godot.rotation_degrees = 45
+	
+func _on_Personatge_area_exited(area):
+	modulate = Color(1,1,1)
+	$Godot.rotation_degrees = 0

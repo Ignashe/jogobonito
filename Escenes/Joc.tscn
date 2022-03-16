@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Escenes/Personatge.tscn" type="PackedScene" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 15.75, 260 )
+
+[node name="Joc" type="Node2D"]
+
+[node name="Area1" type="Area2D" parent="." groups=["Final"]]
+gravity_vec = Vector2( 45, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area1"]
+position = Vector2( 917, 303 )
+shape = SubResource( 2 )
+
+[node name="Area2" type="Area2D" parent="." groups=["Inici"]]
+gravity_vec = Vector2( 45, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2"]
+position = Vector2( 274, 298 )
+shape = SubResource( 2 )
+
+[node name="Personatge" parent="." instance=ExtResource( 1 )]
