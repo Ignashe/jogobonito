@@ -6,5 +6,10 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 415, 22 )
+scale = Vector2( 0.802275, 0.659424 )
 
 [node name="Terra" parent="." instance=ExtResource( 1 )]
+position = Vector2( 291, -63 )
+rotation = 9.72971e-05
+scale = Vector2( 0.643015, 1.23768 )
