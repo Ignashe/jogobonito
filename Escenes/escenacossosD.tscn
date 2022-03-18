@@ -1,15 +1,72 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Escenes/Terra.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Escenes/KinematicBody2D.tscn" type="PackedScene" id=2]
 
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 43.0027, 46.2525 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 189.306, 14.1434 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 33.5956, 15.1592 )
+
 [node name="Node2D" type="Node2D"]
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 415, 22 )
+position = Vector2( 59, 304 )
 scale = Vector2( 0.802275, 0.659424 )
 
+[node name="AnimatedSprite" parent="KinematicBody2D" index="0"]
+frame = 1
+
+[node name="CollisionShape2D" parent="KinematicBody2D" index="1"]
+position = Vector2( 31.7846, 96.2961 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 3 )
+
 [node name="Terra" parent="." instance=ExtResource( 1 )]
-position = Vector2( 291, -63 )
+position = Vector2( -19, 24 )
 rotation = 9.72971e-05
-scale = Vector2( 0.643015, 1.23768 )
+scale = Vector2( 0.556357, 1.23769 )
+
+[node name="CollisionShape2D" parent="Terra" index="0"]
+position = Vector2( 315.831, 321.145 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 1 )
+
+[node name="ColorRect" parent="Terra" index="1"]
+margin_left = 128.0
+margin_top = 336.0
+margin_right = 640.0
+margin_bottom = 346.0
+
+[node name="Terra2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 519, 124 )
+
+[node name="CollisionShape2D" parent="Terra2" index="0"]
+position = Vector2( 128, 301 )
+shape = SubResource( 2 )
+
+[node name="ColorRect" parent="Terra2" index="1"]
+margin_left = 94.0
+margin_top = 317.0
+margin_right = 188.0
+margin_bottom = 329.0
+
+[node name="Terra3" parent="." instance=ExtResource( 1 )]
+
+[node name="CollisionShape2D" parent="Terra3" index="0"]
+position = Vector2( 876, 378.25 )
+
+[node name="ColorRect" parent="Terra3" index="1"]
+margin_left = 866.0
+margin_top = 390.0
+margin_right = 893.0
+margin_bottom = 398.0
+
+[editable path="KinematicBody2D"]
+[editable path="Terra"]
+[editable path="Terra2"]
+[editable path="Terra3"]
