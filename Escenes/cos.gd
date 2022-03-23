@@ -19,7 +19,7 @@ func _physics_process(delta):
 	if is_on_floor():
 		doblejump = 1
 	if position.y >= 1000:
-		position = Vector2(59,304)
+		position = Vector2(45,394)
 	velocitat += gravetat * delta
 	velocitat = move_and_slide(velocitat, Vector2.UP)
 
@@ -28,14 +28,16 @@ func anima(velocitat: Vector2):
 	var animacio : AnimatedSprite = $AnimatedSprite
 	if velocitat.x > 0:
 		animacio.flip_h = false
-		animacio.play('camina')
+		animacio.play('Camina')
 	elif velocitat.x < 0:
 		animacio.flip_h = true
-		animacio.play('camina')
+		animacio.play('Camina')
 	if velocitat.y < -1:
-		animacio.play('salta')
+		animacio.play('Salta')
+		return
+	if velocitat.y > 500:
+		animacio.play('Cau')
 		return
 	if abs(velocitat.x) < 0.1:
-		animacio.play('quiet')
-func _on_Final_body_enered(body):
-	get_tree().change_scene('')
+		animacio.play('Quiet')
+

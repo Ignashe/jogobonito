@@ -10,8 +10,8 @@ position = Vector2( 243, 418 )
 shape = SubResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 113.0
-margin_top = 466.0
-margin_right = 449.0
-margin_bottom = 499.0
+margin_left = 136.0
+margin_top = 492.0
+margin_right = 348.0
+margin_bottom = 512.0
 rect_scale = Vector2( 0.73555, -2.87095 )
