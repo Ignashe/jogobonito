@@ -9,16 +9,6 @@
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ ExtResource( 6 ) ],
-"loop": true,
-"name": "Cau",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ) ],
-"loop": true,
-"name": "Salta",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 1 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "Camina",
@@ -28,10 +18,20 @@ animations = [ {
 "loop": true,
 "name": "Quiet",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "Cau",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "Salta",
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 37.0
+radius = 39.0
 height = 22.0
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
@@ -47,5 +47,5 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 1, 12 )
+position = Vector2( 5, 11 )
 shape = SubResource( 2 )

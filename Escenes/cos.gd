@@ -32,7 +32,7 @@ func anima(velocitat: Vector2):
 	elif velocitat.x < 0:
 		animacio.flip_h = true
 		animacio.play('Camina')
-	if velocitat.y < -1:
+	if velocitat.y < -100:
 		animacio.play('Salta')
 		return
 	if velocitat.y > 500:
