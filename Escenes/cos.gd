@@ -6,6 +6,9 @@ var gravetat = Vector2.DOWN * 980
 var salt = Vector2.UP * 400
 var doblejump = 1
 var altura = 0
+func _on_Area2D_body_entered(body):
+		if Input.is_action_just_pressed("mou adalt"):
+			velocitat = Vector2.UP * 10
 func _physics_process(delta):
 	velocitat.x = 0
 	if Input.is_action_pressed("mou dreta"):
@@ -22,8 +25,8 @@ func _physics_process(delta):
 		position = Vector2(45,394)
 	velocitat += gravetat * delta
 	velocitat = move_and_slide(velocitat, Vector2.UP)
-
 	anima(velocitat)
+
 func anima(velocitat: Vector2):
 	var animacio : AnimatedSprite = $AnimatedSprite
 	if velocitat.x > 0:
@@ -40,4 +43,7 @@ func anima(velocitat: Vector2):
 		return
 	if abs(velocitat.x) < 0.1:
 		animacio.play('Quiet')
+
+
+
 
