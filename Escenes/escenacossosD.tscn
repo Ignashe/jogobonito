@@ -18,11 +18,12 @@ position = Vector2( -38, 411 )
 [node name="StaticBody2D2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 296, 418 )
 
-[node name="Area2D" parent="." instance=ExtResource( 5 )]
-position = Vector2( 389, 463 )
+[node name="Escala" parent="." instance=ExtResource( 5 )]
+position = Vector2( 390, 463 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 33, 417 )
+position = Vector2( 30, 512 )
 scale = Vector2( 0.802275, 0.659424 )
 
-[connection signal="body_entered" from="Area2D" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Escala" to="KinematicBody2D" method="_on_Escala_body_entered"]
+[connection signal="body_shape_exited" from="Escala" to="KinematicBody2D" method="_on_Escala_body_shape_exited"]
