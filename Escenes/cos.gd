@@ -70,7 +70,12 @@ func _on_Escala_body_entered(body):
 	if body.name == 'Zombie':
 		a_escala = true
 
-
+func _on_Escala8_body_entered(body):
+	if body.name == 'Zombie':
+		a_escala = true
+func _on_Escala8_body_shape_exited(body_rid, body, body_shape_index, local_shape_index):
+	if body.name == 'Zombie':
+		a_escala = false
 
 func _on_Escala_body_shape_exited(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == 'Zombie':

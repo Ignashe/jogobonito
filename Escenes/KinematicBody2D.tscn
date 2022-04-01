@@ -21,9 +21,9 @@ animations = [ {
 "name": "Camina",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ) ],
+"frames": [ ExtResource( 6 ) ],
 "loop": true,
-"name": "Salta",
+"name": "Cau",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ) ],
@@ -31,14 +31,14 @@ animations = [ {
 "name": "Quiet",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ) ],
-"loop": true,
-"name": "Cau",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "Escala1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "Salta",
 "speed": 5.0
 } ]
 
@@ -54,7 +54,6 @@ position = Vector2( -1, 2 )
 scale = Vector2( 1.3, 1.2 )
 frames = SubResource( 4 )
 animation = "Camina"
-frame = 1
 playing = true
 __meta__ = {
 "_editor_description_": ""
