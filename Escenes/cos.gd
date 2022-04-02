@@ -33,7 +33,7 @@ func _physics_process(delta):
 	else:
 		gravetat =  Vector2.DOWN * 980
 	if position.y >= 1000:
-		position = Vector2(39,525)
+		position = Vector2(361,513)
 	anima(velocitat)
 	velocitat += gravetat * delta
 	velocitat = move_and_slide(velocitat,Vector2.UP)
@@ -65,18 +65,29 @@ func anima(velocitat: Vector2):
 			animacio.play('Escala')
 		if velocitat.x == 0 and velocitat.y == 0:
 			animacio.play('Escala1')
+	if a_escala == false:
+		if velocitat.y < -1:
+			animacio.play('Salta')
+			return
 
 func _on_Escala_body_entered(body):
 	if body.name == 'Zombie':
 		a_escala = true
-
 func _on_Escala8_body_entered(body):
 	if body.name == 'Zombie':
 		a_escala = true
 func _on_Escala8_body_shape_exited(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == 'Zombie':
 		a_escala = false
-
 func _on_Escala_body_shape_exited(body_rid, body, body_shape_index, local_shape_index):
+	if body.name == 'Zombie':
+		a_escala = false
+func _on_Area2D_body_entered(body):
+	if body.name == 'Zombie':
+		get_tree().change_scene("res://Escenes/Escena_cossos_2.tscn")
+func _on_Escala2_body_entered(body):
+	if body.name == 'Zombie':
+		a_escala = true
+func _on_Escala2_body_shape_exited(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == 'Zombie':
 		a_escala = false

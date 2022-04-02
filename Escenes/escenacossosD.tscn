@@ -1,21 +1,20 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Imatges/Background/background_0000.png" type="Texture" id=1]
 [ext_resource path="res://Escenes/KinematicBody2D.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Escenes/Basic_Grass.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Escenes/Plat.1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Escenes/Area2D.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Escenes/Paret.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Escenes/EscalaLlarga.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Escenes/Objectes/Paret.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Escenes/Objectes/EscalaLlarga.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Escenes/area_canvi_escena.tscn" type="PackedScene" id=8]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2( -3, 0 )
 scale = Vector2( 1.00677, 1.00276 )
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( -57.61, 630.264 )
-
 [node name="BackgroundColorGrass" type="Sprite" parent="."]
-position = Vector2( 453.927, 404.885 )
+position = Vector2( 538.355, 265.268 )
 scale = Vector2( 89.6018, 76.2483 )
 texture = ExtResource( 1 )
 
@@ -47,7 +46,7 @@ position = Vector2( 996.256, 115.681 )
 position = Vector2( 996.256, -40.8873 )
 
 [node name="Paret14" parent="." instance=ExtResource( 6 )]
-position = Vector2( 10.926, -52.8544 )
+position = Vector2( 8.93948, -43.8789 )
 
 [node name="Paret12" parent="." instance=ExtResource( 6 )]
 position = Vector2( 11.9193, 108.701 )
@@ -86,16 +85,16 @@ position = Vector2( 216.534, 761.901 )
 position = Vector2( 70.5226, 763.895 )
 
 [node name="Escala5" parent="." instance=ExtResource( 5 )]
-position = Vector2( 659.242, 154.03 )
+position = Vector2( 660.528, 153.576 )
 
 [node name="Escala6" parent="." instance=ExtResource( 5 )]
-position = Vector2( 131.112, 37.8956 )
+position = Vector2( 130.119, 37.8954 )
 
 [node name="Escala7" parent="." instance=ExtResource( 5 )]
-position = Vector2( 457.9, 156.569 )
+position = Vector2( 458.893, 151.582 )
 
 [node name="Escala4" parent="." instance=ExtResource( 5 )]
-position = Vector2( 660.242, 322.03 )
+position = Vector2( 663.508, 311.141 )
 
 [node name="Escala8" parent="." instance=ExtResource( 7 )]
 position = Vector2( 854.218, 71.8022 )
@@ -113,34 +112,31 @@ position = Vector2( 593.242, 637.03 )
 position = Vector2( 297.983, 630.263 )
 
 [node name="Plat16" parent="." instance=ExtResource( 4 )]
-position = Vector2( 148.991, 630.263 )
+position = Vector2( 166.87, 630.26 )
 
 [node name="Plat17" parent="." instance=ExtResource( 4 )]
-position = Vector2( 0.993277, 630.263 )
+position = Vector2( 29.7983, 630.26 )
 
 [node name="Plat18" parent="." instance=ExtResource( 4 )]
-position = Vector2( -55.6235, 634.253 )
+position = Vector2( -55.6234, 630.26 )
 
 [node name="Plat11" parent="." instance=ExtResource( 4 )]
-position = Vector2( 246.333, 487.656 )
+position = Vector2( 241.366, 487.654 )
 
 [node name="Plat12" parent="." instance=ExtResource( 4 )]
-position = Vector2( 59.5966, 353.027 )
+position = Vector2( 55.6234, 350.034 )
 
 [node name="Base" parent="." instance=ExtResource( 3 )]
 position = Vector2( -54.6302, 419.843 )
 
 [node name="Escala2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 805.242, 306.03 )
+position = Vector2( 804.553, 303.163 )
 
 [node name="Escala" parent="." instance=ExtResource( 5 )]
 position = Vector2( 86.415, 432.807 )
 
 [node name="Escala3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 943.242, 431.03 )
-
-[node name="Base2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 40.7243, 492.643 )
+position = Vector2( 945.598, 431.808 )
 
 [node name="Base7" parent="." instance=ExtResource( 3 )]
 position = Vector2( 890.969, 421.838 )
@@ -158,14 +154,17 @@ position = Vector2( 307.916, 419.843 )
 position = Vector2( 732.242, 764.03 )
 
 [node name="Plat5" parent="." instance=ExtResource( 4 )]
-position = Vector2( 447.968, 484.665 )
+position = Vector2( 444.987, 486.657 )
 
 [node name="Plat7" parent="." instance=ExtResource( 4 )]
 position = Vector2( 643.242, 486.03 )
 
 [node name="Zombie" parent="." instance=ExtResource( 2 )]
-position = Vector2( 74.4957, 511.591 )
+position = Vector2( 361.552, 513.582 )
 scale = Vector2( 0.802275, 0.659424 )
+
+[node name="Canvi Escena" parent="." instance=ExtResource( 8 )]
+position = Vector2( 46.6839, -83.7688 )
 
 [connection signal="body_entered" from="Escala5" to="Zombie" method="_on_Escala_body_entered"]
 [connection signal="body_shape_exited" from="Escala5" to="Zombie" method="_on_Escala_body_shape_exited"]
@@ -183,3 +182,4 @@ scale = Vector2( 0.802275, 0.659424 )
 [connection signal="body_shape_exited" from="Escala" to="Zombie" method="_on_Escala_body_shape_exited"]
 [connection signal="body_entered" from="Escala3" to="Zombie" method="_on_Escala_body_entered"]
 [connection signal="body_shape_exited" from="Escala3" to="Zombie" method="_on_Escala_body_shape_exited"]
+[connection signal="body_entered" from="Canvi Escena" to="Zombie" method="_on_Area2D_body_entered"]

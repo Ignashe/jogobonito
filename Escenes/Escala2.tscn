@@ -4,36 +4,35 @@
 [ext_resource path="res://Imatges/Backgrounds/Tiles/tile_0071.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 13.9076, 70.2914 )
+extents = Vector2( 14.5, 66 )
 
 [node name="Area2D" type="Area2D"]
-position = Vector2( -218.521, -242.331 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 12.8979, -1.66901 )
+position = Vector2( 173, 84 )
 scale = Vector2( 2.84701, 2.06607 )
 texture = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 13.021, 30.581 )
+position = Vector2( 173, 116 )
+scale = Vector2( 2.83333, 1.52778 )
+texture = ExtResource( 2 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( 173, 197 )
+scale = Vector2( 2.83333, 1.52778 )
+texture = ExtResource( 2 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 173, 170 )
 scale = Vector2( 2.83333, 1.52778 )
 texture = ExtResource( 2 )
 
 [node name="Sprite3" type="Sprite" parent="."]
-position = Vector2( 13.021, 60.331 )
-scale = Vector2( 2.83333, 1.77778 )
-texture = ExtResource( 2 )
-
-[node name="Sprite4" type="Sprite" parent="."]
-position = Vector2( 13.021, 90.331 )
-scale = Vector2( 2.83333, 1.63889 )
-texture = ExtResource( 2 )
-
-[node name="Sprite5" type="Sprite" parent="."]
-position = Vector2( 13.021, 119.331 )
-scale = Vector2( 2.83333, 1.63889 )
+position = Vector2( 173, 143 )
+scale = Vector2( 2.83333, 1.52778 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 12.6134, 64.0396 )
+position = Vector2( 173.5, 144 )
 shape = SubResource( 1 )
