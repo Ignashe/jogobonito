@@ -9,98 +9,163 @@
 [ext_resource path="res://Escenes/EscalaLlarga.tscn" type="PackedScene" id=7]
 
 [node name="Node2D" type="Node2D"]
+scale = Vector2( 1.00677, 1.00276 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -57.61, 630.264 )
 
 [node name="BackgroundColorGrass" type="Sprite" parent="."]
-position = Vector2( 511, 306 )
-scale = Vector2( 42.703, 25.6667 )
+position = Vector2( 453.927, 404.885 )
+scale = Vector2( 89.6018, 76.2483 )
 texture = ExtResource( 1 )
 
+[node name="Plat8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 781.709, 294.189 )
+
+[node name="Plat9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 607.885, 351.033 )
+
+[node name="Plat13" parent="." instance=ExtResource( 4 )]
+position = Vector2( 463.86, 351.033 )
+
+[node name="Plat14" parent="." instance=ExtResource( 4 )]
+position = Vector2( 319.835, 351.033 )
+
 [node name="Paret" parent="." instance=ExtResource( 6 )]
-position = Vector2( 553, 460 )
+position = Vector2( 413.203, 439.788 )
 
 [node name="Paret3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1033, 452 )
+position = Vector2( 997.242, 441.03 )
+
+[node name="Paret8" parent="." instance=ExtResource( 6 )]
+position = Vector2( 997.25, 278.233 )
+
+[node name="Paret9" parent="." instance=ExtResource( 6 )]
+position = Vector2( 996.256, 115.681 )
+
+[node name="Paret10" parent="." instance=ExtResource( 6 )]
+position = Vector2( 996.256, -40.8873 )
+
+[node name="Paret14" parent="." instance=ExtResource( 6 )]
+position = Vector2( 10.926, -52.8544 )
+
+[node name="Paret12" parent="." instance=ExtResource( 6 )]
+position = Vector2( 11.9193, 108.701 )
+
+[node name="Paret13" parent="." instance=ExtResource( 6 )]
+position = Vector2( 11.9193, 269.258 )
+
+[node name="Paret11" parent="." instance=ExtResource( 6 )]
+position = Vector2( 12.9126, 429.816 )
 
 [node name="Paret5" parent="." instance=ExtResource( 6 )]
-position = Vector2( 943, 176 )
+position = Vector2( 906.861, 166.541 )
 
 [node name="Paret7" parent="." instance=ExtResource( 6 )]
-position = Vector2( 851, 50 )
+position = Vector2( 822.433, 7.97802 )
 
 [node name="Paret6" parent="." instance=ExtResource( 6 )]
-position = Vector2( 944, 49 )
+position = Vector2( 907.855, 81.7747 )
 
 [node name="Paret4" parent="." instance=ExtResource( 6 )]
-position = Vector2( 664, 198 )
+position = Vector2( 628.242, 187.03 )
+
+[node name="Paret15" parent="." instance=ExtResource( 6 )]
+position = Vector2( 512.531, 178.508 )
+
+[node name="Paret16" parent="." instance=ExtResource( 6 )]
+position = Vector2( 276.131, 40.8873 )
 
 [node name="Paret2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 803, 328 )
+position = Vector2( 767.242, 317.03 )
 
 [node name="Plat2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 377, 777 )
+position = Vector2( 216.534, 761.901 )
 
 [node name="Plat1" parent="." instance=ExtResource( 4 )]
-position = Vector2( 236, 777 )
+position = Vector2( 70.5226, 763.895 )
 
 [node name="Escala5" parent="." instance=ExtResource( 5 )]
-position = Vector2( 695, 165 )
+position = Vector2( 659.242, 154.03 )
 
 [node name="Escala6" parent="." instance=ExtResource( 5 )]
-position = Vector2( 281, 154 )
+position = Vector2( 131.112, 37.8956 )
 
 [node name="Escala7" parent="." instance=ExtResource( 5 )]
-position = Vector2( 397, 138 )
+position = Vector2( 457.9, 156.569 )
 
 [node name="Escala4" parent="." instance=ExtResource( 5 )]
-position = Vector2( 696, 333 )
+position = Vector2( 660.242, 322.03 )
+
+[node name="Escala8" parent="." instance=ExtResource( 7 )]
+position = Vector2( 854.218, 71.8022 )
+
+[node name="Plat15" parent="." instance=ExtResource( 4 )]
+position = Vector2( 182.763, 351.033 )
 
 [node name="Plat3" parent="." instance=ExtResource( 4 )]
-position = Vector2( 825, 648 )
+position = Vector2( 789.242, 637.03 )
 
 [node name="Plat6" parent="." instance=ExtResource( 4 )]
-position = Vector2( 629, 648 )
+position = Vector2( 593.242, 637.03 )
+
+[node name="Plat10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 297.983, 630.263 )
+
+[node name="Plat16" parent="." instance=ExtResource( 4 )]
+position = Vector2( 148.991, 630.263 )
+
+[node name="Plat17" parent="." instance=ExtResource( 4 )]
+position = Vector2( 0.993277, 630.263 )
+
+[node name="Plat18" parent="." instance=ExtResource( 4 )]
+position = Vector2( -55.6235, 634.253 )
+
+[node name="Plat11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 246.333, 487.656 )
+
+[node name="Plat12" parent="." instance=ExtResource( 4 )]
+position = Vector2( 59.5966, 353.027 )
 
 [node name="Base" parent="." instance=ExtResource( 3 )]
-position = Vector2( -18, 431 )
-
-[node name="Escala" parent="." instance=ExtResource( 5 )]
-position = Vector2( 254, 444 )
-
-[node name="Escala3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 979, 442 )
-
-[node name="Base2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 100, 431 )
-
-[node name="Base7" parent="." instance=ExtResource( 3 )]
-position = Vector2( 896, 431 )
-
-[node name="Base3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 329, 432 )
-
-[node name="Base4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 210, 431 )
-
-[node name="Base5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 446, 432 )
+position = Vector2( -54.6302, 419.843 )
 
 [node name="Escala2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 841, 317 )
+position = Vector2( 805.242, 306.03 )
+
+[node name="Escala" parent="." instance=ExtResource( 5 )]
+position = Vector2( 86.415, 432.807 )
+
+[node name="Escala3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 943.242, 431.03 )
+
+[node name="Base2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 40.7243, 492.643 )
+
+[node name="Base7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 890.969, 421.838 )
+
+[node name="Base3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 186.736, 419.843 )
+
+[node name="Base4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 67.5428, 419.843 )
+
+[node name="Base5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 307.916, 419.843 )
 
 [node name="Plat4" parent="." instance=ExtResource( 4 )]
-position = Vector2( 768, 775 )
+position = Vector2( 732.242, 764.03 )
 
 [node name="Plat5" parent="." instance=ExtResource( 4 )]
-position = Vector2( 485, 496 )
+position = Vector2( 447.968, 484.665 )
 
 [node name="Plat7" parent="." instance=ExtResource( 4 )]
-position = Vector2( 679, 497 )
+position = Vector2( 643.242, 486.03 )
 
 [node name="Zombie" parent="." instance=ExtResource( 2 )]
-position = Vector2( 39, 525 )
+position = Vector2( 74.4957, 511.591 )
 scale = Vector2( 0.802275, 0.659424 )
-
-[node name="Area2D" parent="." instance=ExtResource( 7 )]
 
 [connection signal="body_entered" from="Escala5" to="Zombie" method="_on_Escala_body_entered"]
 [connection signal="body_shape_exited" from="Escala5" to="Zombie" method="_on_Escala_body_shape_exited"]
@@ -110,9 +175,11 @@ scale = Vector2( 0.802275, 0.659424 )
 [connection signal="body_shape_exited" from="Escala7" to="Zombie" method="_on_Escala_body_shape_exited"]
 [connection signal="body_entered" from="Escala4" to="Zombie" method="_on_Escala_body_entered"]
 [connection signal="body_shape_exited" from="Escala4" to="Zombie" method="_on_Escala_body_shape_exited"]
+[connection signal="body_entered" from="Escala8" to="Zombie" method="_on_Escala8_body_entered"]
+[connection signal="body_shape_exited" from="Escala8" to="Zombie" method="_on_Escala8_body_shape_exited"]
+[connection signal="body_entered" from="Escala2" to="Zombie" method="_on_Escala_body_entered"]
+[connection signal="body_shape_exited" from="Escala2" to="Zombie" method="_on_Escala_body_shape_exited"]
 [connection signal="body_entered" from="Escala" to="Zombie" method="_on_Escala_body_entered"]
 [connection signal="body_shape_exited" from="Escala" to="Zombie" method="_on_Escala_body_shape_exited"]
 [connection signal="body_entered" from="Escala3" to="Zombie" method="_on_Escala_body_entered"]
 [connection signal="body_shape_exited" from="Escala3" to="Zombie" method="_on_Escala_body_shape_exited"]
-[connection signal="body_entered" from="Escala2" to="Zombie" method="_on_Escala_body_entered"]
-[connection signal="body_shape_exited" from="Escala2" to="Zombie" method="_on_Escala_body_shape_exited"]
