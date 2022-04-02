@@ -85,9 +85,28 @@ func _on_Escala_body_shape_exited(body_rid, body, body_shape_index, local_shape_
 func _on_Area2D_body_entered(body):
 	if body.name == 'Zombie':
 		get_tree().change_scene("res://Escenes/Escena_cossos_2.tscn")
+
 func _on_Escala2_body_entered(body):
 	if body.name == 'Zombie':
 		a_escala = true
 func _on_Escala2_body_shape_exited(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == 'Zombie':
 		a_escala = false
+func _on_Canvi_escena_2_body_entered(body):
+	if body.name == 'Zombie':
+		get_tree().change_scene("res://Escenes/Escena_cossos_3.tscn")
+
+
+func _on_Escala_3_body_entered(body):
+	if body.name == 'Zombie':
+		a_escala = true
+
+
+func _on_Escala_3_body_shape_exited(body_rid, body, body_shape_index, local_shape_index):
+	if body.name == 'Zombie':
+		a_escala = false
+
+
+func _on_Area2D7_body_entered(body):
+	if body.name == 'Zombie':
+		get_tree().change_scene("res://Escenes/Pantalla_final.tscn")

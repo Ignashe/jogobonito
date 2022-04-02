@@ -1,10 +1,11 @@
 [gd_scene load_steps=2 format=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 50, 26.5 )
+extents = Vector2( 55.75, 50 )
 
-[node name="Canvi_escena" type="Area2D"]
+[node name="Area2D7" type="Area2D"]
+position = Vector2( -133, 480 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 40, 16.5 )
+position = Vector2( 206.25, -266 )
 shape = SubResource( 1 )
